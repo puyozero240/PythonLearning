@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>掲示板の書き込みページ</title>
+</head>
+
+<body>
+    <head>
+        <h1>これは掲示板の書き込みページです。</h1>
+        <!-- メニュー -->
+        <nav>
+            <ul>
+                <li>
+                    <!-- 「/」にアクセスするURLを作成 -->
+                    <a href="{{ url_for('index') }}">トップページ</a>
+                </li>
+                <li>
+                    <!-- 「/write」にアクセスするURLを作成 -->
+                    <a href="{{ url_for('write') }}">書き込みページ</a>
+                </li>                
+            </ul>
+        </nav>
+    </head>
+</body>
+</html>
